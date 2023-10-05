@@ -70,6 +70,8 @@ body {
     font-size: 26px;
 }
 
+/* Hero front */
+
 .heroFront {
     text-align: center;
     padding: 20px;
@@ -100,7 +102,7 @@ body {
     margin: 20px 0;
 }
 
-/* Hero front */
+/* Cards */
 
 .cards-container {
     max-width: 800px;
