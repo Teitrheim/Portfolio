@@ -146,22 +146,22 @@ body {
 
 .skills_container {
     max-width: 90%;
-    margin: 20px auto;
+    margin: 20px auto 40px;
     padding: 20px;
     background-color: #000000;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-
+    border: 2px solid #d4af37;
 }
 
 .skills {
     color: #ffffff;
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 20px;
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .skills-icons {
@@ -174,7 +174,7 @@ body {
 .skills-icons i {
     font-size: 26px;
     margin: 0 10px;
-    color: #ffffff;
+    color: #d4af37;
     /* Icon color */
     transition: color 0.3s ease;
 }
