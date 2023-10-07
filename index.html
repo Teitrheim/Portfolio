@@ -6,8 +6,12 @@
     <meta name="description" content="My portfolio with everything I've learned the first year of studying">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/715a319bdb.js" crossorigin="anonymous"></script>
+    <script src="cards.js" defer></script>
     <title>My Portfolio | Home</title>
 </head>
 
@@ -28,7 +32,9 @@
         <p class="headline">BUILDING THE FUTURE</p>
     </section>
     <p class="work">My Work</p>
-    <div class="cards-container">
+    <div class="dynamic-content" id="dynamicContent"></div>
+
+    <!-- <div class="cards-container">
         <div class="cards">
             <article class="card">
                 <header>
@@ -67,7 +73,7 @@
                 <footer>I have a footer!</footer>
             </article>
         </div>
-    </div>
+    </div> -->
     <div class="skills_container">
         <p class="skills">My Skills</p>
         <div class="skills-icons" id="skillsContainer">
@@ -80,7 +86,16 @@
         </div>
     </div>
     <div class="about_container">
-        <!-- insert about text-->
+        <p class="about-title">About Me and This Website</p>
+        <p class="about-text">
+            Welcome to my portfolio! I'm passionate about front-end development and dedicated to creating engaging and
+            responsive web experiences. This website showcases my projects and skills developed during my first year of
+            studying.
+        </p>
+        <p class="about-text">
+            I believe in the power of clean and efficient code to bring ideas to life. Feel free to explore my work and
+            get in touch if you have any questions or collaboration opportunities.
+        </p>
     </div>
     <div class="cv_container">
         <!-- insert curriculum vitae-->
@@ -91,5 +106,4 @@
     <div class="link_container">
         <!-- insert links-->
     </div>
-    <script src="js/skills.js" type="module"></script>
 </body>

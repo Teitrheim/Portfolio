@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
@@ -12,6 +11,7 @@ body {
 }
 
 body {
+    font-family: 'Roboto Condensed', sans-serif;
     min-height: 100vh;
     background-color: black;
 }
@@ -89,7 +89,7 @@ body {
     width: 200px;
     max-width: 100%;
     position: relative;
-    background-image: url("/assets/selfie.png");
+    background-image: url("/assets/2.selfie_3_11zon.png");
     background-size: cover;
     margin: 20px auto;
     border-radius: 8px;
@@ -118,6 +118,17 @@ body {
 
 /* Cards */
 
+.dynamic-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
 .cards-container {
     max-width: 100%;
     margin: 20px auto;
@@ -129,6 +140,12 @@ body {
     text-align: center;
 }
 
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -136,25 +153,47 @@ body {
 }
 
 .card {
-    max-width: 100%;
-    display: grid;
-    grid-template-rows: max-content 300px 1fr;
-    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
     border: 2px solid #d4af37;
     border-radius: 10px;
     overflow: hidden;
     color: #ffffff;
-}
-
-.card img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 20px;
 }
 
 .card:hover {
-    background-color: #333;
+    background-color: #000000;
     box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.description {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card footer a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card footer a:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* my skills */
@@ -183,6 +222,34 @@ body {
     margin: 0 10px;
     color: #d4af37;
     transition: color 0.3s ease;
+}
+
+/* About */
+
+.about_container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #d4af37;
+}
+
+.about-title {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 
