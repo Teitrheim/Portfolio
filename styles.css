@@ -224,8 +224,7 @@ body {
     transition: color 0.3s ease;
 }
 
-/* About */
-
+/* About Container */
 .about_container {
     max-width: 90%;
     margin: 20px auto;
@@ -251,6 +250,9 @@ body {
     line-height: 1.5;
     margin-bottom: 15px;
 }
+
+
+
 
 
 

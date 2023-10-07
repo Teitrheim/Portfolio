@@ -2,38 +2,35 @@ const projects = [
   {
     title: "Square Eyes",
     description:
-      "In this assignment I created a a properly functioning, responsive website for streaming movies using HTML and CSS",
-    imageId: 8, // Replace with the actual image ID from your WordPress site
+      "In my first coding assignment I created a a properly functioning, responsive website for streaming movies using HTML and CSS",
+    imageId: 8,
     githubRepo: "https://github.com/yourusername/square-eyes",
     liveSite: "https://www.square-eyes-live-site.com",
   },
   {
-    title: "Square Eyes",
+    title: "The community science museum/Semester Project",
     description:
-      "In this assignment I created a a properly functioning, responsive website for streaming movies using HTML and CSS",
-    imageId: 8, // Replace with the actual image ID from your WordPress site
+      "In my semester project I was to design and write code for an interactive science museum called the Community Science Museum. Its core target audience is primary and middle school children (ages 7-15) and families with young children.",
+    imageId: 9,
     githubRepo: "https://github.com/yourusername/square-eyes",
     liveSite: "https://www.square-eyes-live-site.com",
   },
   {
-    title: "Square Eyes",
+    title: "Fighting Days",
     description:
-      "In this assignment I created a a properly functioning, responsive website for streaming movies using HTML and CSS",
-    imageId: 8, // Replace with the actual image ID from your WordPress site
+      "In my project exam I made a blog about the different styles of martial arts",
+    imageId: 10,
     githubRepo: "https://github.com/yourusername/square-eyes",
     liveSite: "https://www.square-eyes-live-site.com",
   },
-  // Add more projects as needed
 ];
 
 const fullProductUrl = "https://portfolio.seeorno.no/wp-json/wp/v2/media";
 
-// Function to create project cards
 async function createProjectCard(project) {
   const card = document.createElement("article");
   card.classList.add("card");
 
-  // Fetch image data
   const imageData = await fetch(`${fullProductUrl}/${project.imageId}`)
     .then((response) => response.json())
     .catch((error) => {
@@ -41,7 +38,6 @@ async function createProjectCard(project) {
       return null;
     });
 
-  // Set the image source if image data is available
   const imageUrl = imageData
     ? imageData.source_url
     : "path/to/default-image.jpg";
@@ -62,19 +58,15 @@ async function createProjectCard(project) {
   return card;
 }
 
-// Function to add project cards to the DOM
 async function displayProjects() {
   const dynamicContent = document.getElementById("dynamicContent");
 
-  // Fetch image data for each project and create cards
   const cardPromises = projects.map(async (project) => {
     const card = await createProjectCard(project);
     dynamicContent.appendChild(card);
   });
 
-  // Wait for all cards to be created and added to the DOM
   await Promise.all(cardPromises);
 }
 
-// Call the function when the page is loaded
 window.addEventListener("load", displayProjects);
