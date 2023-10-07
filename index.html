@@ -12,6 +12,7 @@
     <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/715a319bdb.js" crossorigin="anonymous"></script>
     <script src="cards.js" defer></script>
+    <script src="contact.js" defer></script>
     <title>My Portfolio | Home</title>
 </head>
 
@@ -111,41 +112,61 @@
                 <h2>Chief Emoji Translator</h2>
                 <p>🌟 One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
                     into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could
-                    see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was
-                    hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin
-                    compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                    see his brown belly.</p>
             </div>
             <div class="cv-entry">
                 <h2>Master of ...</h2>
                 <p>🚀 One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
                     into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could
-                    see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was
-                    hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin
-                    compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                    see his brown belly.</p>
             </div>
             <div class="cv-entry">
                 <h2>Wizard of ...</h2>
                 <p>✨ One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
                     into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could
-                    see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was
-                    hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin
-                    compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                    see his brown belly.</p>
             </div>
             <div class="cv-entry">
                 <h2>Coffee ...</h2>
                 <p>☕ One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
                     into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could
-                    see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was
-                    hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin
-                    compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                    see his brown belly.</p>
             </div>
         </div>
     </div>
 
     <div class="contact_container">
-        <!-- insert contact form-->
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <div id="nameError" class="error"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="emailError" class="error"></div>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <div id="subjectError" class="error"></div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <div id="messageError" class="error"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmationMessage"></div>
     </div>
-    <div class="link_container">
-        <!-- insert links-->
+    <div class="link_text">
+        <h2>Connect With Me</h2>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank" title="GitHub" rel="noopener"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn" rel="noopener"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="mailto:you@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
     </div>
+
 </body>
