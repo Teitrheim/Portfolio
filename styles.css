@@ -57,13 +57,24 @@ body {
 .home1 {
     position: absolute;
     right: 20px;
-    margin-right: 150px;
+    margin-right: 157px;
 }
 
 .home2 {
     position: absolute;
     right: 20px;
-    margin-right: 20px;
+}
+
+.home3 {
+    position: absolute;
+    right: 20px;
+    margin-right: 84px
+}
+
+.home4 {
+    position: absolute;
+    right: 20px;
+    margin-right: 224px;
 }
 
 .thomas {
@@ -224,7 +235,8 @@ body {
     transition: color 0.3s ease;
 }
 
-/* About Container */
+/* About */
+
 .about_container {
     max-width: 90%;
     margin: 20px auto;
@@ -251,6 +263,53 @@ body {
     margin-bottom: 15px;
 }
 
+/* CV */
+
+.cv_container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #d4af37;
+}
+
+.cv-heading {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cv-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cv-entry {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.cv-entry h2 {
+    color: #d4af37;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cv-entry p {
+    color: #ffffff;
+    font-size: 16px;
+}
 
 
 
@@ -260,19 +319,40 @@ body {
     .top-menu {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     .nav-menu {
         margin-top: 10px;
+        width: 100%;
+        text-align: center;
     }
 
     .nav-menu ul {
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 
     .nav-menu li {
         margin: 5px 0;
+        position: relative;
+    }
+
+    .home1 {
+        order: 2;
+    }
+
+    .home2 {
+        order: 4;
+    }
+
+    .home3 {
+        order: 3;
+    }
+
+    .home4 {
+        order: 1;
     }
 
     .home1,

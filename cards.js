@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Fighting Days",
     description:
-      "In my project exam I made a blog about the different styles of martial arts",
+      "In my project exam I made a blog about the different styles of martial arts using JavaScript, fetch and API",
     imageId: 10,
     githubRepo: "https://github.com/yourusername/square-eyes",
     liveSite: "https://www.square-eyes-live-site.com",
