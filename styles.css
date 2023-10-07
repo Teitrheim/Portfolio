@@ -102,28 +102,43 @@ body {
     margin: 20px 0;
 }
 
+.work,
+.skills {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.work {
+    margin-top: 90px;
+}
+
 /* Cards */
 
 .cards-container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 20px;
     background-color: #000000;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* border: 2px solid #d4af37; */
     overflow: hidden;
+    text-align: center;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
 }
 
 .card {
+    max-width: 100%;
     display: grid;
-    grid-template-rows: max-content 200px 1fr;
+    grid-template-rows: max-content 300px 1fr;
     transition: box-shadow 0.3s ease;
     border: 2px solid #d4af37;
     border-radius: 10px;
@@ -156,14 +171,6 @@ body {
     border: 2px solid #d4af37;
 }
 
-.skills {
-    color: #ffffff;
-    font-size: 26px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-
 .skills-icons {
     display: flex;
     justify-content: space-evenly;
@@ -175,9 +182,9 @@ body {
     font-size: 26px;
     margin: 0 10px;
     color: #d4af37;
-    /* Icon color */
     transition: color 0.3s ease;
 }
+
 
 
 @media (max-width: 768px) {
@@ -203,6 +210,12 @@ body {
     .home2 {
         position: static;
         margin: 10px 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 
