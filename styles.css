@@ -85,19 +85,21 @@ body {
 
 .heroFront {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 
 }
 
 .headline {
-    font-size: 26px;
+    font-size: 32px;
     font-weight: bold;
     color: #d4af37;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .selfie_container {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     max-width: 100%;
     position: relative;
     background-image: url("/assets/2.selfie_3_11zon.png");
