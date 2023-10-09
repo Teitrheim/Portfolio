@@ -263,6 +263,17 @@ body {
     margin-bottom: 15px;
 }
 
+.about-image-container {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.about-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* CV */
 
 .cv_container {
@@ -314,7 +325,7 @@ body {
 /* Contact */
 
 .contact_container {
-    max-width: 90%;
+    max-width: 70%;
     margin: 20px auto;
     padding: 20px;
     background-color: #000000;
@@ -358,18 +369,19 @@ textarea {
 }
 
 button {
-    background-color: #d4af37;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid #d4af37;
 }
 
 button:hover {
-    background-color: #000000;
-    color: #d4af37;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 
