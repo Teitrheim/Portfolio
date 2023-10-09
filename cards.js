@@ -4,24 +4,24 @@ const projects = [
     description:
       "In my first coding assignment I created a a properly functioning, responsive website for streaming movies using HTML and CSS",
     imageId: 8,
-    githubRepo: "https://github.com/yourusername/square-eyes",
-    liveSite: "https://www.square-eyes-live-site.com",
+    githubRepo: "https://github.com/Teitrheim/Square-Eyes.git",
+    liveSite: "https://exquisite-pegasus-a5a0d4.netlify.app/",
   },
   {
     title: "The community science museum/Semester Project",
     description:
       "In my semester project I was to design and write code for an interactive science museum called the Community Science Museum. Its core target audience is primary and middle school children (ages 7-15) and families with young children.",
     imageId: 9,
-    githubRepo: "https://github.com/yourusername/square-eyes",
-    liveSite: "https://www.square-eyes-live-site.com",
+    githubRepo: "https://github.com/Teitrheim/Community-Science-Museum.git",
+    liveSite: "https://bright-paprenjak-7e7cd9.netlify.app/",
   },
   {
     title: "Fighting Days",
     description:
       "In my project exam I made a blog about the different styles of martial arts using JavaScript, fetch and API",
     imageId: 10,
-    githubRepo: "https://github.com/yourusername/square-eyes",
-    liveSite: "https://www.square-eyes-live-site.com",
+    githubRepo: "",
+    liveSite: "https://frolicking-melba-eddf66.netlify.app/",
   },
 ];
 
