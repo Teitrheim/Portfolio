@@ -22,7 +22,8 @@ const projects = [
     description:
       "In my project exam I made a blog about the different styles of martial arts using JavaScript, fetch and API",
     imageId: 10,
-    githubRepo: "",
+    githubRepo:
+      "https://github.com/Noroff-FEU-Assignments/project-exam-1-Teitrheim.git",
     liveSite: "https://frolicking-melba-eddf66.netlify.app/",
   },
 ];
