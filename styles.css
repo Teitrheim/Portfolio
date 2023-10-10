@@ -267,6 +267,14 @@ body {
     border: 2px solid #d4af37;
 }
 
+.about_container,
+.cv_container,
+.contact_container,
+.link_text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .about-title {
     color: #ffffff;
     font-size: 26px;
@@ -313,12 +321,6 @@ body {
     font-weight: bold;
 }
 
-.cv-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .cv-entry {
     flex: 0 0 calc(33.33% - 20px);
     margin: 10px;
@@ -327,6 +329,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .cv-entry h2 {
@@ -455,12 +458,12 @@ button:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    font-size: 20px;
+    font-size: 22px;
     background-color: #d4af37;
     color: #000000;
-    border: none;
-    border-radius: 5px;
+    padding: 10px;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #scrollToTopBtn:hover {
@@ -559,6 +562,10 @@ button:hover {
 
     .skills-icons i {
         margin: 10px;
+    }
+
+    .cv-entry {
+        margin-bottom: 20px;
     }
 }
 
