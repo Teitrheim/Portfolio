@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #000000;
 }
 
 .nav-menu {
@@ -52,6 +52,22 @@ body {
 .nav-menu a {
     text-decoration: none;
     font-size: 18px;
+}
+
+.nav-menu a:hover,
+.thomas:hover,
+.home1:hover,
+.home2:hover,
+.home3:hover,
+.home4:hover,
+.nav-menu a:focus,
+.thomas:focus,
+.home1:focus,
+.home2:focus,
+.home3:focus,
+.home4:focus {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .home1 {
@@ -119,7 +135,7 @@ body {
 .skills {
     color: #ffffff;
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
 
@@ -434,30 +450,78 @@ button:hover {
     margin-left: 5px;
 }
 
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    background-color: #d4af37;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
 
 @media (max-width: 768px) {
     .top-menu {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
     }
 
     .nav-menu {
         margin-top: 10px;
-        width: 100%;
-        text-align: center;
     }
 
     .nav-menu ul {
         flex-direction: column;
         text-align: center;
-        width: 100%;
     }
 
     .nav-menu li {
         margin: 5px 0;
-        position: relative;
+
     }
+
+    @media (max-width: 768px) {
+
+        .nav-menu a,
+        .thomas,
+        .home1,
+        .home2,
+        .home3,
+        .home4 {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #d4af37;
+            color: black;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+
+        .thomas {
+            display: none;
+        }
+
+
+
+        .nav-menu a:hover {
+            background-color: black;
+            color: #d4af37;
+        }
+    }
+
 
     .home1 {
         order: 2;
@@ -477,6 +541,14 @@ button:hover {
 
     .home1,
     .home2 {
+        position: static;
+        margin: 10px 0;
+    }
+
+    .home1,
+    .home2,
+    .home3,
+    .home4 {
         position: static;
         margin: 10px 0;
     }
