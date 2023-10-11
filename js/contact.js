@@ -44,7 +44,14 @@ function validateForm(event) {
     messageError.textContent = "";
     subjectError.textContent = "";
     emailError.textContent = "";
+    alert("Your message has been sent");
     document.getElementById("confirmationMessage").style.display = "block";
+  }
+
+  const namePattern = /^[A-Za-z ]+$/;
+  if (!namePattern.test(nameInput.value.trim())) {
+    nameError.textContent = "Name can only contain alphabets and spaces";
+    isValid = false;
   }
 }
 
