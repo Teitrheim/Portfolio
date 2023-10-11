@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Square Eyes",
     description:
-      "In my first coding assignment I created a a properly functioning, responsive website for streaming movies using HTML and CSS",
+      "In my first coding assignment I created a a properly functioning, responsive website for streaming movies using HTML, CSS and Javascript. The Javascript was an assignment to add to the project later that year",
     imageId: 8,
     githubRepo: "https://github.com/Teitrheim/Square-Eyes.git",
     liveSite: "https://exquisite-pegasus-a5a0d4.netlify.app/",
@@ -12,7 +12,7 @@ const projects = [
   {
     title: "The community science museum/Semester Project",
     description:
-      "In my semester project I was to design and write code for an interactive science museum called the Community Science Museum. Its core target audience is primary and middle school children (ages 7-15) and families with young children.",
+      "In my semester project I was to design and write code for an interactive science museum called the Community Science Museum. Its core target audience is primary and middle school children (ages 7-15) and families with young children. Made with html and css.",
     imageId: 9,
     githubRepo: "https://github.com/Teitrheim/Community-Science-Museum.git",
     liveSite: "https://bright-paprenjak-7e7cd9.netlify.app/",
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Fighting Days",
     description:
-      "In my project exam I made a blog about the different styles of martial arts using JavaScript, fetch and API",
+      "In my project exam I made a blog about the different styles of martial arts using html, css, Wordpress, JavaScript and rest API",
     imageId: 10,
     githubRepo:
       "https://github.com/Noroff-FEU-Assignments/project-exam-1-Teitrheim.git",
